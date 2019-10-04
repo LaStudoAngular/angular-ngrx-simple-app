@@ -13,3 +13,7 @@ export const initialAppState: IAppState = {
     users: initialUserState,
     config: initialConfigState
 }
+
+export function getInitialAppState(): IAppState {
+    return initialAppState;
+}
