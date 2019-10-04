@@ -1,7 +1,7 @@
 import { IUser } from 'src/app/interfaces/user';
 
 export interface IUserState {
-    users: IUser,
+    users: IUser[],
     selectedUser: IUser
 }
 
