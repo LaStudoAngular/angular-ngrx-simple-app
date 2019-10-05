@@ -16,6 +16,6 @@ export class ConfigEffects {
   @Effect() GetConfig$ = this.actions$.pipe(
     ofType<GetConfig>(EConfigActions.GetConfig),
     switchMap(() => this.configService.getConfig()),
-    switchMap((config: IConfig) => of(new GetConfigSuccess(config))
+    switchMap((config: IConfig) => of(new GetConfigSuccess(config)))
   );
 }
